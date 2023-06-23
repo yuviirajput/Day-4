@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index example 2</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: chocolate;
+            height: 100px;
+            line-height: 100px;
+        }
+        .container{
+            position: relative;
+        }
+        .redbox{
+            position: relative;
+            z-index: 1;
+            border: 3px solid black;
+            height: 1000px;
+            margin: 100px;
+            background-color: red;
+        }
+        .greenbox{
+            position: absolute;
+            z-index: 2;
+            background-color: green;
+            height: 700px;
+            width: 70%;
+            left: 230px;
+            bottom: 250px;
+            border: 3px solid black;
+        }
+        .bluebox{
+            position: absolute;
+            z-index: 2;
+            background-color: rgb(35, 9, 119);
+            height: 500px;
+            width: 50%;
+            left: 340px;
+            bottom: 370px;
+            border: 3px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>ONE-PIECE</h1>
+
+    <div class="container">
+        <div class="redbox">BOX 1</div>
+        <div class="greenbox">BOX 2</div>
+        <div class="bluebox">BOX 3</div>
+     </div>
+
+</body>
+</html>
